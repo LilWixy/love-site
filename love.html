@@ -1,0 +1,40 @@
+<html>
+
+
+<head>
+    <title>pour ma bien aimée</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kyle</h1>
+    <p>L'amour est un ensemble complexe d'émotions, de comportements et de croyances associés à de forts sentiments d'affection, de protection, de chaleur et de respect envers une autre personne.<br> Il peut également inclure une profonde attirance romantique ou sexuelle. <br> L'amour peut être perçu comme un lien entre deux personnes, fondé sur la confiance, la compréhension et le respect mutuel. <br>Il est souvent considéré comme l'une des émotions humaines les plus puissantes et fondamentales.</p>
+    <p>Je t'aime mon amour, tu es la lumière de ma vie et la raison de mon bonheur. <br>Chaque jour passé à tes côtés est un cadeau précieux que je chéris profondément. <br>Tu es mon refuge, mon soutien et ma source d'inspiration. <br>Je suis tellement reconnaissant de t'avoir dans ma vie, et je promets de t'aimer et de te chérir pour toujours.</p>
+    <h2>Veux-tu m'aimer pour toujours ?</h2>
+<div id="buttons">
+    <button class="button" id="o">Oui</button>
+    <button class="button" id="n">Non</button>
+</div>
+<script>
+    const nonBtn = document.getElementById("n");
+
+    nonBtn.addEventListener("mouseover", function() {
+
+        nonBtn.style.position = "absolute";
+
+        const largeur = window.innerWidth - nonBtn.offsetWidth;
+        const hauteur = window.innerHeight - nonBtn.offsetHeight;
+
+        const randomX = Math.random() * largeur;
+        const randomY = Math.random() * hauteur;
+
+        nonBtn.style.left = randomX + "px";
+        nonBtn.style.top = randomY + "px";
+    });
+</script>
+<script>
+    document.getElementById("o").onclick = function() {
+        window.location.href = "amour.html";
+    };
+</script>
+</body>
+</html>
